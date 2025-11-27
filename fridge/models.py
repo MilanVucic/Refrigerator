@@ -16,8 +16,8 @@ class Fridge(models.Model):
 class Item(models.Model):
     fridge = models.ForeignKey(Fridge, on_delete=models.CASCADE, related_name="items")
     name = models.CharField(max_length=100)
-    description = models.TextField()
-    quantity = models.IntegerField()
+    description = models.TextField(null=True)
+    quantity = models.IntegerField(default=1)
 
     time_stored = models.DateTimeField(default=timezone.now)
 

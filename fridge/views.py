@@ -1,4 +1,5 @@
 from rest_framework import viewsets
+from rest_framework.exceptions import PermissionDenied
 from rest_framework.permissions import IsAuthenticated
 from .models import Fridge, Item
 from .serializers import FridgeSerializer, ItemSerializer
@@ -20,5 +21,10 @@ class ItemViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        # Only items in your fridges
         return self.queryset.filter(fridge__owner=self.request.user)
+
+    def perform_create(self, serializer):
+        fridge = serializer.validated_data['fridge']
+        if fridge.owner != self.request.user:
+            raise PermissionDenied("You cannot add items to someone else's fridge.")
+        serializer.save()

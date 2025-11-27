@@ -2,7 +2,7 @@ from rest_framework.test import APITestCase
 from django.urls import reverse
 from django.contrib.auth.models import User
 from rest_framework import status
-from .models import Fridge
+from fridge.models import Fridge
 
 class FridgeCRUDTests(APITestCase):
     def setUp(self):
