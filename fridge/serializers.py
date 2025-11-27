@@ -11,4 +11,5 @@ class FridgeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Fridge
-        fields = ["id", "name", "items"]
+        fields = ["id", "name", "description", "items"]
+        read_only_fields = ['created_at', 'updated_at']
