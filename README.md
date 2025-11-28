@@ -17,6 +17,7 @@ Users can register, log in, create fridges, add items, and search by name. All A
 
 ## How to run locally
 
+0. [Download ](https://www.python.org/downloads/) & Install Python 3.13+
 1. Clone the repository
 2. Create a virtual environment:
 ```commandline
