@@ -24,10 +24,13 @@ router.register("fridges", FridgeViewSet)
 router.register("items", ItemViewSet)
 
 urlpatterns = [
+    # Admin panel
     path('admin/', admin.site.urls),
+
+    # Api routes
     path("api/", include(router.urls)),
 
-    # Account management routes
+    # Account management routes (login/register/refresh)
     path("api/accounts/", include("accounts.urls")),
 ]
 
