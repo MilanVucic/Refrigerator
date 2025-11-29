@@ -19,7 +19,7 @@ class Item(models.Model):
     description = models.TextField(null=True)
     quantity = models.IntegerField(default=1)
 
-    time_stored = models.DateTimeField(default=timezone.now)
+    time_stored = models.DateField(default=timezone.now)
 
     best_before = models.DateField(null=True, blank=True)
 
