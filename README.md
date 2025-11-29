@@ -45,6 +45,7 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 Admin Panel - visit /admin/ and log in with superuser credentials
+
 7. Run the development server:
 ```commandline
 python manage.py runserver
