@@ -83,3 +83,11 @@ The subsequent routes are protected, you'll need to add the `Authorization` head
 | `api/items/<id>/`           | PATCH | `{"quantity": 5}` | Partially update an item |
 | `api/items/<id>/`           | DELETE | _none_ | Delete an item |
 | `api/items/?search=<query>` | GET | _none_ | Search items by name |
+
+
+### Possible improvements
+
+- The backend lacks extensive input validation and should enforce strict schema checks to prevent malformed or insecure data from being stored.
+- Error handling is basic and could benefit from standardized error responses and some logging middleware.
+- Pagination for list endpoints would help performance with larger datasets.
+- Tests do exist, but a more comprehensive test suite could be implemented.
