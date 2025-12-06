@@ -40,13 +40,21 @@ pip install -r requirements.txt
 ```commandline
 python manage.py migrate
 ```
-6. (Optional) Create a superuser for admin access:
+
+6. (Optional, recommended) Populate the DB with dummy data from the fixture:
+```commandline
+python manage.py loaddata db.json
+```
+If you do this, you can use the predefined superuser 'vucic' and test user 'test', password: `123456` for both.
+Test user has 2 fridges and some items in them already.
+
+7. (Optional) Create a superuser for admin access:
 ```commandline
 python manage.py createsuperuser
 ```
 Admin Panel - visit /admin/ and log in with superuser credentials
 
-7. Run the development server:
+8. Run the development server:
 ```commandline
 python manage.py runserver
 ```

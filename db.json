@@ -1,0 +1,790 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "authtoken",
+    "model": "token"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "authtoken",
+    "model": "tokenproxy"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "fridge",
+    "model": "fridge"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "fridge",
+    "model": "item"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5qztq72zgg9icdu98loxl5nis3ofu1qx",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pChI5S6dN8zNMMMSNVAUtqV8e7apAvd_vfef6mJtjVPW4vLNIu6KKNOv1sgfsSyA7lTuVXNtazLHPSu6IM2PVaJz-vh_h1kavlb4-CMYOc7F6iHZIA8BwRPXkAcOCYHYC2HmNgi0-DxnAzagAa5t6jeH85TN1U:1vPJO5:y12mcYdISdGs0ud0O-R1GdB1nh5s-2PtrIgHM7cOr0c",
+    "expire_date": "2025-12-13T11:45:13.656Z"
+  }
+},
+{
+  "model": "fridge.item",
+  "pk": 7,
+  "fields": {
+    "fridge": 2,
+    "name": "Soy milk",
+    "description": "as",
+    "quantity": 1,
+    "time_stored": "2025-11-29",
+    "best_before": null,
+    "created_at": "2025-11-29T13:18:47.660Z",
+    "updated_at": "2025-11-29T13:18:47.660Z"
+  }
+},
+{
+  "model": "fridge.item",
+  "pk": 8,
+  "fields": {
+    "fridge": 2,
+    "name": "Cheese",
+    "description": null,
+    "quantity": 1,
+    "time_stored": "2025-11-29",
+    "best_before": "2025-12-04",
+    "created_at": "2025-11-29T13:26:03.369Z",
+    "updated_at": "2025-11-29T13:37:37.474Z"
+  }
+},
+{
+  "model": "fridge.item",
+  "pk": 9,
+  "fields": {
+    "fridge": 2,
+    "name": "Soy beans",
+    "description": null,
+    "quantity": 1,
+    "time_stored": "2025-11-29",
+    "best_before": "2025-12-05",
+    "created_at": "2025-11-29T13:34:51.564Z",
+    "updated_at": "2025-11-29T13:34:51.564Z"
+  }
+},
+{
+  "model": "fridge.item",
+  "pk": 10,
+  "fields": {
+    "fridge": 2,
+    "name": "Queso",
+    "description": null,
+    "quantity": 1,
+    "time_stored": "2025-11-29",
+    "best_before": "2025-11-28",
+    "created_at": "2025-11-29T13:35:26.399Z",
+    "updated_at": "2025-11-29T13:35:26.399Z"
+  }
+},
+{
+  "model": "fridge.item",
+  "pk": 11,
+  "fields": {
+    "fridge": 3,
+    "name": "Mlekce",
+    "description": null,
+    "quantity": 13,
+    "time_stored": "2025-11-29",
+    "best_before": "2025-12-07",
+    "created_at": "2025-11-29T13:41:16.211Z",
+    "updated_at": "2025-11-29T13:41:32.491Z"
+  }
+},
+{
+  "model": "fridge.item",
+  "pk": 12,
+  "fields": {
+    "fridge": 2,
+    "name": "jabuka",
+    "description": null,
+    "quantity": 3,
+    "time_stored": "2025-12-04",
+    "best_before": "2025-12-15",
+    "created_at": "2025-12-04T20:13:39.976Z",
+    "updated_at": "2025-12-04T20:13:39.976Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "add_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "change_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "delete_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Token",
+    "content_type": [
+      "authtoken",
+      "token"
+    ],
+    "codename": "view_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "add_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "change_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "delete_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Token",
+    "content_type": [
+      "authtoken",
+      "tokenproxy"
+    ],
+    "codename": "view_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add fridge",
+    "content_type": [
+      "fridge",
+      "fridge"
+    ],
+    "codename": "add_fridge"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change fridge",
+    "content_type": [
+      "fridge",
+      "fridge"
+    ],
+    "codename": "change_fridge"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete fridge",
+    "content_type": [
+      "fridge",
+      "fridge"
+    ],
+    "codename": "delete_fridge"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view fridge",
+    "content_type": [
+      "fridge",
+      "fridge"
+    ],
+    "codename": "view_fridge"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add item",
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "codename": "add_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change item",
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "codename": "change_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete item",
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "codename": "delete_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view item",
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "codename": "view_item"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$kidWjEcCbQbFseAiTjnodS$vazlpdNpx0hyRmzhMVhK1nMhimwjrygReDKLm6hei+c=",
+    "last_login": "2025-11-29T11:45:13.645Z",
+    "is_superuser": true,
+    "username": "vucic",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-11-29T11:44:59.216Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$QqidsXRIKuk2TSC1rrptBb$9Q/1Zv27ypncd0IYdNYSGlVmPyWgvbSJTNMFQ89FvGU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@asd.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-11-29T11:55:09.514Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "fridge.fridge",
+  "pk": 2,
+  "fields": {
+    "owner": [
+      "test"
+    ],
+    "name": "Kitchen Fridge",
+    "description": "my cool fridge",
+    "created_at": "2025-11-29T12:56:31.229Z",
+    "updated_at": "2025-11-29T12:56:31.229Z"
+  }
+},
+{
+  "model": "fridge.fridge",
+  "pk": 3,
+  "fields": {
+    "owner": [
+      "test"
+    ],
+    "name": "Friki",
+    "description": "najbolji",
+    "created_at": "2025-11-29T13:41:00.817Z",
+    "updated_at": "2025-11-29T13:41:00.817Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-11-29T11:57:17.484Z",
+    "user": [
+      "vucic"
+    ],
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "object_id": "1",
+    "object_repr": "Soy milk in Kitchen Fridge",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-11-29T12:35:34.042Z",
+    "user": [
+      "vucic"
+    ],
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "object_id": "2",
+    "object_repr": "Soy milk in Kitchen Fridge",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-11-29T12:43:00.419Z",
+    "user": [
+      "vucic"
+    ],
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "object_id": "3",
+    "object_repr": "Soy milk in Kitchen Fridge",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-11-29T12:47:03.358Z",
+    "user": [
+      "vucic"
+    ],
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "object_id": "4",
+    "object_repr": "Soy milk in Kitchen Fridge",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-11-29T12:59:56.552Z",
+    "user": [
+      "vucic"
+    ],
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "object_id": "5",
+    "object_repr": "Soy milk in Kitchen Fridge",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-11-29T13:03:26.476Z",
+    "user": [
+      "vucic"
+    ],
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "object_id": "6",
+    "object_repr": "Soy milk in Kitchen Fridge",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-11-29T13:18:47.664Z",
+    "user": [
+      "vucic"
+    ],
+    "content_type": [
+      "fridge",
+      "item"
+    ],
+    "object_id": "7",
+    "object_repr": "Soy milk in Kitchen Fridge",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
